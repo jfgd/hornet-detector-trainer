@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>Abeilles_Frelons_asiatiques_devant_des_ruches_1280x720_021.jpeg</filename>
+	<path>/home/jeremy/Documents/HornetKiller/images/train/Abeilles_Frelons_asiatiques_devant_des_ruches_1280x720_021.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>584</xmin>
+			<ymin>391</ymin>
+			<xmax>638</xmax>
+			<ymax>430</ymax>
+		</bndbox>
+	</object>
+</annotation>
