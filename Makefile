@@ -39,6 +39,7 @@ faster_rcnn_inception_v2_coco_2018_01_28.tar.gz:
 
 faster_rcnn_inception_v2_coco_2018_01_28: faster_rcnn_inception_v2_coco_2018_01_28.tar.gz
 	tar -xf $^
+	touch $@ # For dependency tree
 
 train_test: models proto
 	PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/builders/model_builder_test.py
