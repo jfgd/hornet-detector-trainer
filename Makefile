@@ -43,7 +43,7 @@ faster_rcnn_inception_v2_coco_2018_01_28: faster_rcnn_inception_v2_coco_2018_01_
 train_test: models proto
 	PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/builders/model_builder_test.py
 
-train: record models proto faster_rcnn_inception_v2_coco_2018_01_28
+train: models proto images/test.record images/train.record faster_rcnn_inception_v2_coco_2018_01_28
 	PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/model_main.py \
 			--pipeline_config_path=training/faster_rcnn_inception_v2_hornet.config \
 			--model_dir=training --num_train_steps=50000 \
