@@ -16,8 +16,10 @@ csv: images/test_labels.csv images/train_labels.csv
 
 
 # Tensorflow models submodule
-models:
+models/research:
 	git submodule update --init
+models: models/research
+
 
 # Proto compilation
 proto: models
@@ -47,4 +49,4 @@ train: record models proto faster_rcnn_inception_v2_coco_2018_01_28
 			--model_dir=training --num_train_steps=50000 \
 			--sample_1_of_n_eval_examples=1 --alsologtostderr
 
-.PHONY: default csv proto record train_test train
+.PHONY: default csv models proto record train_test train
