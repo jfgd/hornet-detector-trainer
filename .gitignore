@@ -1,2 +1,10 @@
 *~
 *#
+*.tar.gz
+faster_rcnn_inception_v2_coco_2018_01_28
+events.out.tfevents.*
+model.ckpt-*
+images/test.record
+images/train.record
+training/checkpoint
+training/graph.pbtxt
