@@ -3,6 +3,15 @@
 SCRIPTS_PATH=scripts
 PYTHON_PATH=$$PYTHONPATH:models/research/:models/research/slim
 
+# GPU accel
+CUDA_LIB_PATH=/usr/local/cuda/extras/CUPTI/lib64
+ifneq ("$(wildcard $(CUDA_LIB_PATH))","")
+$(info "CUDA found")
+LD_LIB=$$LD_LIBRARY_PATH:$(CUDA_PATH)
+else
+LD_LIB=$$LD_LIBRARY_PATH
+endif
+
 default:
 	@echo "Hornet Killer Makefile"
 
@@ -45,7 +54,7 @@ train_test: models proto
 	PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/builders/model_builder_test.py
 
 train: models proto images/test.record images/train.record faster_rcnn_inception_v2_coco_2018_01_28
-	PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/model_main.py \
+	LD_LIBRARY_PATH=$(LD_LIB) PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/model_main.py \
 			--pipeline_config_path=training/faster_rcnn_inception_v2_hornet.config \
 			--model_dir=training --num_train_steps=50000 \
 			--sample_1_of_n_eval_examples=1 --alsologtostderr
