@@ -45,17 +45,21 @@ images/train.record: images/train_labels.csv models
 record: images/test.record images/train.record
 
 
-faster_rcnn_inception_v2_coco_2018_01_28.tar.gz:
+# Detection Model Zoo
+faster_%.tar.gz ssd_%.tar.gz:
 	wget http://download.tensorflow.org/models/object_detection/$@
 
-faster_rcnn_inception_v2_coco_2018_01_28: faster_rcnn_inception_v2_coco_2018_01_28.tar.gz
-	tar -xf $^
+# Uncompress
+%_model: %.tar.gz
+	tar -xf $^ --one-top-level=$@ --strip-components 1
 	touch $@ # For dependency tree
+
+
 
 train_test: models proto
 	PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/builders/model_builder_test.py
 
-train: models proto images/test.record images/train.record faster_rcnn_inception_v2_coco_2018_01_28
+train: models proto images/test.record images/train.record faster_rcnn_inception_v2_coco_2018_01_28_model
 	LD_LIBRARY_PATH=$(LD_LIB) PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/model_main.py \
 			--pipeline_config_path=training/faster_rcnn_inception_v2_hornet.config \
 			--model_dir=training --num_train_steps=50000 \
