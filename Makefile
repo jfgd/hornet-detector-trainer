@@ -36,9 +36,11 @@ proto: models
 
 # Record files
 images/test.record: images/test_labels.csv models
-	PYTHONPATH=$(PYTHON_PATH) ./generate_tfrecord.py --csv_input=$<  --output_path=$@  --image_dir=images/test
+	PYTHONPATH=$(PYTHON_PATH) ./scripts/generate_tfrecord.py \
+			--csv_input=$< --output_path=$@  --image_dir=images/test
 images/train.record: images/train_labels.csv models
-	PYTHONPATH=$(PYTHON_PATH) ./generate_tfrecord.py --csv_input=$<  --output_path=$@ --image_dir=images/train
+	PYTHONPATH=$(PYTHON_PATH) ./scripts/generate_tfrecord.py \
+			--csv_input=$< --output_path=$@ --image_dir=images/train
 
 record: images/test.record images/train.record
 
