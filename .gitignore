@@ -1,7 +1,7 @@
 *~
 *#
 *.tar.gz
-faster_rcnn_inception_v2_coco_2018_01_28
+*_model
 events.out.tfevents.*
 model.ckpt-*
 images/test.record
