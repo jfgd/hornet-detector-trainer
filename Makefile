@@ -48,7 +48,7 @@ record: images/test.record images/train.record
 
 
 # Detection Model Zoo
-faster_%.tar.gz ssd_%.tar.gz:
+faster_%.tar.gz ssd_%.tar.gz ssdlite_%.tar.gz:
 	wget http://download.tensorflow.org/models/object_detection/$@
 
 # Uncompress
@@ -73,6 +73,12 @@ train_ssd: models proto images/test.record images/train.record ssd_mobilenet_v1_
 			--model_dir=training --num_train_steps=50000 \
 			--sample_1_of_n_eval_examples=1 --alsologtostderr
 
+
+train_litemobilenetv2: models proto images/test.record images/train.record ssdlite_mobilenet_v2_coco_2018_05_09_model
+	LD_LIBRARY_PATH=$(LD_LIB) PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/model_main.py \
+			--pipeline_config_path=training/ssdlite_mobilenet_v2_hornet.config \
+			--model_dir=training --num_train_steps=50000 \
+			--sample_1_of_n_eval_examples=1 --alsologtostderr
 
 # Tensorboard
 board:
