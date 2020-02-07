@@ -3,6 +3,8 @@
 SCRIPTS_PATH=scripts
 PYTHON_PATH=$$PYTHONPATH:models/research/:models/research/slim
 
+CONFIG ?= faster_rcnn_inception_v2_hornet.config
+
 # GPU accel
 CUDA_LIB_PATH=/usr/local/cuda/extras/CUPTI/lib64
 ifneq ("$(wildcard $(CUDA_LIB_PATH))","")
@@ -77,11 +79,12 @@ board:
 	PYTHONPATH=$(PYTHON_PATH) tensorboard --logdir training
 
 export-graph: models
+	@echo "Exporting for $(CONFIG)"
 	PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/export_inference_graph.py \
 			--input_type image_tensor \
-			--pipeline_config_path training/faster_rcnn_inception_v2_hornet.config \
+			--pipeline_config_path training/$(CONFIG) \
 			--trained_checkpoint_prefix training/model.ckpt-50000 \
-			--output_directory trained-inference-graphs/faster_rcnn_inception_v2_hornet_$(shell date +%Y-%m-%d-%H-%M)
+			--output_directory trained-inference-graphs/$(basename $(CONFIG))_$(shell date +%Y-%m-%d-%H-%M)
 
 
 .PHONY: default csv models proto record train_test train train_ssd export-graph board
