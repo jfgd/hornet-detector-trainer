@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>VES_Vespa_velutina_1bis.jpg</filename>
+	<path>/home/jeremy/Documents/HornetKiller/images/train/VES_Vespa_velutina_1bis.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>427</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>35</xmin>
+			<ymin>38</ymin>
+			<xmax>467</xmax>
+			<ymax>393</ymax>
+		</bndbox>
+	</object>
+</annotation>

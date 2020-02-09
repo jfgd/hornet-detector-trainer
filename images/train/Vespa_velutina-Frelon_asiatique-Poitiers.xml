@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>Vespa_velutina-Frelon_asiatique-Poitiers.jpg</filename>
+	<path>/home/jeremy/Documents/HornetKiller/images/train/Vespa_velutina-Frelon_asiatique-Poitiers.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1087</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>335</xmin>
+			<ymin>144</ymin>
+			<xmax>740</xmax>
+			<ymax>555</ymax>
+		</bndbox>
+	</object>
+</annotation>

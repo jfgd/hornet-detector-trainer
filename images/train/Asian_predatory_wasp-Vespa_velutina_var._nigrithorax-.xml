@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>Asian_predatory_wasp-Vespa_velutina_var._nigrithorax-.jpg</filename>
+	<path>/home/jeremy/Documents/HornetKiller/images/train/Asian_predatory_wasp-Vespa_velutina_var._nigrithorax-.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1080</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>366</xmin>
+			<ymin>282</ymin>
+			<xmax>638</xmax>
+			<ymax>445</ymax>
+		</bndbox>
+	</object>
+</annotation>

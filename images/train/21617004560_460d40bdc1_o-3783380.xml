@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>21617004560_460d40bdc1_o-3783380.jpg</filename>
+	<path>/home/jeremy/Documents/HornetKiller/images/train/21617004560_460d40bdc1_o-3783380.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1200</width>
+		<height>674</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>300</xmin>
+			<ymin>277</ymin>
+			<xmax>723</xmax>
+			<ymax>560</ymax>
+		</bndbox>
+	</object>
+</annotation>

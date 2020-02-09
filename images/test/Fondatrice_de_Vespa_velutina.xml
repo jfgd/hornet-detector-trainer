@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test</folder>
+	<filename>Fondatrice_de_Vespa_velutina.png</filename>
+	<path>/home/jeremy/Documents/HornetKiller/images/test/Fondatrice_de_Vespa_velutina.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>936</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>168</xmin>
+			<ymin>130</ymin>
+			<xmax>845</xmax>
+			<ymax>564</ymax>
+		</bndbox>
+	</object>
+</annotation>
