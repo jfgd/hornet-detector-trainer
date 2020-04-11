@@ -61,13 +61,13 @@ out = cv2.VideoWriter("output.mp4", cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'),
 #MODEL_NAME = 'faster_rcnn_resnet101_fgvc_2018_07_19'
 #MODEL_NAME = 'trained-inference-graphs/faster_rcnn_inception_v2_hornet_2020-02-05-11-50'
 #MODEL_NAME = 'trained-inference-graphs/ssd_mobilenet_v1_hornet_2020-02-07-08-57'
-MODEL_NAME = 'trained-inference-graphs/ssdlite_mobilenet_v2_hornet_2020-02-10-12-25'
-#MODEL_NAME = 'trained-inference-graphs/ssdlite_mobilenet_v2_hornet_2020-02-11-09-16'
+#MODEL_NAME = 'trained-inference-graphs/ssdlite_mobilenet_v2_hornet_2020-02-10-12-25'
+MODEL_NAME = 'trained-inference-graphs/ssdlite_mobilenet_v2_hornet_2020-02-11-09-16'
 
 #VIDEO_PATH = "videos/Le_frelon_asiatique_Vespa_Velutina_devant_ma_ruche_1280x720.mp4"
 #VIDEO_PATH = "videos/Abeilles_contre_frelon_asiatique_640x360.mp4"
 VIDEO_PATH = "videos/Abeilles_Frelons_asiatiques_devant_des_ruches_1280x720.mp4"
-VIDEO_PATH = "videos/Cette_ruche_est_assiegee_par_des_frelons_asiatiques_1280x720.mp4"
+#VIDEO_PATH = "videos/Cette_ruche_est_assiegee_par_des_frelons_asiatiques_1280x720.mp4"
 
 # Grab path to current working directory
 CWD_PATH = os.getcwd()
