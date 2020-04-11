@@ -3,9 +3,10 @@
 SCRIPTS_PATH=scripts
 PYTHON_PATH=$$PYTHONPATH:models/research/:models/research/slim
 
+# Default model config
 CONFIG ?= ssdlite_mobilenet_v2_hornet.config
 
-# GPU accel
+# If GPU/Cuda acceleration found enable it
 CUDA_LIB_PATH=/usr/local/cuda/extras/CUPTI/lib64
 ifneq ("$(wildcard $(CUDA_LIB_PATH))","")
 $(info "CUDA found")
@@ -14,8 +15,12 @@ else
 LD_LIB=$$LD_LIBRARY_PATH
 endif
 
-default:
-	@echo "Hornet Killer Makefile"
+help:
+	@echo "Hornet Detector Tensorflow Model Trainer "
+	@echo ""
+	@echo "train:\tTrain tensorflow model"
+	@echo "export-graph:\tExport inference graph"
+	@echo "export-tflite-graph:\tExport tflite inference graph"
 
 # CSV files
 images/test_labels.csv: $(wildcard images/test/*.xml)
@@ -36,7 +41,7 @@ models: models/research
 proto: models
 	cd models/research && protoc object_detection/protos/*.proto --python_out=.
 
-# Record files
+# Generate Record files
 images/test.record: images/test_labels.csv models
 	PYTHONPATH=$(PYTHON_PATH) ./scripts/generate_tfrecord.py \
 			--csv_input=$< --output_path=$@  --image_dir=images/test
@@ -51,49 +56,54 @@ record: images/test.record images/train.record
 faster_%.tar.gz ssd_%.tar.gz ssdlite_%.tar.gz:
 	wget http://download.tensorflow.org/models/object_detection/$@
 
-# Uncompress
+# Uncompress model archive on-demand
 %_model: %.tar.gz
 	tar -xf $^ --one-top-level=$@ --strip-components 1
 	touch $@ # For dependency tree
 
 
-
+# Test trainer (do nothing)
 train_test: models proto
 	PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/builders/model_builder_test.py
 
-train: models proto images/test.record images/train.record faster_rcnn_inception_v2_coco_2018_01_28_model
-	LD_LIBRARY_PATH=$(LD_LIB) PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/model_main.py \
-			--pipeline_config_path=training/faster_rcnn_inception_v2_hornet.config \
-			--model_dir=training --num_train_steps=50000 \
-			--sample_1_of_n_eval_examples=1 --alsologtostderr
+# Default model to train
+train: train_ssdmbnetv2
 
-train_ssd: models proto images/test.record images/train.record ssd_mobilenet_v1_coco_2018_01_28_model
-	LD_LIBRARY_PATH=$(LD_LIB) PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/model_main.py \
-			--pipeline_config_path=training/ssd_mobilenet_v1_hornet.config \
-			--model_dir=training --num_train_steps=50000 \
-			--sample_1_of_n_eval_examples=1 --alsologtostderr
-
-
-train_litemobilenetv2: models proto images/test.record images/train.record ssdlite_mobilenet_v2_coco_2018_05_09_model
+# Train a model based on ssdlite_mobilenet_v2_coco_2018_05_09
+train_ssdmbnetv2: models proto images/test.record images/train.record ssdlite_mobilenet_v2_coco_2018_05_09_model
 	LD_LIBRARY_PATH=$(LD_LIB) PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/model_main.py \
 			--pipeline_config_path=training/ssdlite_mobilenet_v2_hornet.config \
 			--model_dir=training --num_train_steps=50000 \
 			--sample_1_of_n_eval_examples=1 --alsologtostderr
 
-# Tensorboard
+# Train a model based on ssd_mobilenet_v1_coco_2018_01_28
+train_ssdmbnetv1: models proto images/test.record images/train.record ssd_mobilenet_v1_coco_2018_01_28_model
+	LD_LIBRARY_PATH=$(LD_LIB) PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/model_main.py \
+			--pipeline_config_path=training/ssd_mobilenet_v1_hornet.config \
+			--model_dir=training --num_train_steps=50000 \
+			--sample_1_of_n_eval_examples=1 --alsologtostderr
+
+# Train a model based on faster_rcnn_inception_v2_coco_2018_01_28
+train_frcnnv2: models proto images/test.record images/train.record faster_rcnn_inception_v2_coco_2018_01_28_model
+	LD_LIBRARY_PATH=$(LD_LIB) PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/model_main.py \
+			--pipeline_config_path=training/faster_rcnn_inception_v2_hornet.config \
+			--model_dir=training --num_train_steps=50000 \
+			--sample_1_of_n_eval_examples=1 --alsologtostderr
+
+# Run Tensorboard web server
 board:
 	PYTHONPATH=$(PYTHON_PATH) tensorboard --logdir training
 
-export-graph-classic: models
-	@echo "Exporting for $(CONFIG)"
+export-graph: models
+	@echo "Exporting graph for $(CONFIG)"
 	PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/export_inference_graph.py \
 			--input_type image_tensor \
 			--pipeline_config_path training/$(CONFIG) \
 			--trained_checkpoint_prefix training/model.ckpt-50000 \
 			--output_directory trained-inference-graphs/$(basename $(CONFIG))_$(shell date +%Y-%m-%d-%H-%M)
 
-export-graph: models
-	@echo "Exporting tflite for $(CONFIG)"
+export-tflite-graph: models
+	@echo "Exporting tflite graph for $(CONFIG)"
 	PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/export_tflite_ssd_graph.py \
 		--pipeline_config_path=training/$(CONFIG) \
 		--trained_checkpoint_prefix=training/model.ckpt-50000 \
@@ -102,4 +112,4 @@ export-graph: models
 
 
 
-.PHONY: default csv models proto record train_test train train_ssd export-graph-classic export-graph board
+.PHONY: help csv models proto record train_test train train_ssdmbnetv2 train_ssdmbnetv1 train_frcnnv2 export-graph-classic export-graph board
