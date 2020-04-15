@@ -112,5 +112,18 @@ export-tflite-graph: models
 		--output_directory=$(EXPORT_GRAPH_PATH)/$(basename $(CONFIG))_tflite_$(shell date +%Y-%m-%d-%H-%M)
 
 
+# Label images with labelImg
+labelImg/labelImg.py:
+	git submodule update --init
+labelImg: labelImg/labelImg.py
 
-.PHONY: help csv models proto record train_test train train_ssdmbnetv2 train_ssdmbnetv1 train_frcnnv2 export-graph-classic export-graph board
+labelImg/libs/resources.py: labelImg
+	make -C labelImg qt5py3
+
+# Run labeImg
+label: labelImg/libs/resources.py
+	python3 labelImg/labelImg.py images/
+
+
+
+.PHONY: help csv models proto record train_test train train_ssdmbnetv2 train_ssdmbnetv1 train_frcnnv2 export-graph-classic export-graph board label
