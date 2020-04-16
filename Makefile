@@ -34,7 +34,7 @@ csv: images/test_labels.csv images/train_labels.csv
 
 # Tensorflow models submodule
 models/research:
-	git submodule update --init
+	git submodule update --init models
 models: models/research
 
 
@@ -114,7 +114,7 @@ export-tflite-graph: models
 
 # Label images with labelImg
 labelImg/labelImg.py:
-	git submodule update --init
+	git submodule update --init labelImg
 labelImg: labelImg/labelImg.py
 
 labelImg/libs/resources.py: labelImg
