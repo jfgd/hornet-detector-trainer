@@ -1,0 +1,37 @@
+<annotation>
+	<folder>tosort</folder>
+	<filename>jodaille_frelon_2017-05-05-183901.jpg</filename>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/tosort/jodaille_frelon_2017-05-05-183901.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>905</xmin>
+			<ymin>232</ymin>
+			<xmax>941</xmax>
+			<ymax>259</ymax>
+		</bndbox>
+	</object>	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>733</xmin>
+			<ymin>438</ymin>
+			<xmax>789</xmax>
+			<ymax>491</ymax>
+		</bndbox>
+	</object>
+</annotation>
