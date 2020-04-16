@@ -2,6 +2,7 @@
 
 SCRIPTS_PATH=scripts
 PYTHON_PATH=$$PYTHONPATH:models/research/:models/research/slim
+EXPORT_GRAPH_PATH=graphs
 
 # Default model config
 CONFIG ?= ssdlite_mobilenet_v2_hornet.config
@@ -100,7 +101,7 @@ export-graph: models
 			--input_type image_tensor \
 			--pipeline_config_path training/$(CONFIG) \
 			--trained_checkpoint_prefix training/model.ckpt-50000 \
-			--output_directory trained-inference-graphs/$(basename $(CONFIG))_$(shell date +%Y-%m-%d-%H-%M)
+			--output_directory $(EXPORT_GRAPH_PATH)/$(basename $(CONFIG))_$(shell date +%Y-%m-%d-%H-%M)
 
 export-tflite-graph: models
 	@echo "Exporting tflite graph for $(CONFIG)"
@@ -108,7 +109,7 @@ export-tflite-graph: models
 		--pipeline_config_path=training/$(CONFIG) \
 		--trained_checkpoint_prefix=training/model.ckpt-50000 \
 		--add_postprocessing_op=true \
-		--output_directory=trained-inference-graphs/$(basename $(CONFIG))_tflite_$(shell date +%Y-%m-%d-%H-%M)
+		--output_directory=$(EXPORT_GRAPH_PATH)/$(basename $(CONFIG))_tflite_$(shell date +%Y-%m-%d-%H-%M)
 
 
 
