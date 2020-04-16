@@ -16,8 +16,12 @@ import io
 import pandas as pd
 import tensorflow as tf
 
+import sys
+sys.path.append('models/research/')
+sys.path.append('models/research/object_detection')
+
 from PIL import Image
-from models.research.object_detection.utils import dataset_util
+from utils import dataset_util
 from collections import namedtuple, OrderedDict
 
 flags = tf.app.flags
