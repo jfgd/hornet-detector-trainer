@@ -96,7 +96,7 @@ board:
 	PYTHONPATH=$(PYTHON_PATH) tensorboard --logdir training
 
 DATE=$(shell date +%Y-%m-%d-%H-%M)
-export-graph: models
+export-graph: models proto
 	@echo "Exporting graph for $(CONFIG)"
 	PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/export_inference_graph.py \
 			--input_type image_tensor \
