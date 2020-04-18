@@ -66,8 +66,8 @@ MODEL_NAME = 'graphs/ssdlite_mobilenet_v2_hornet_2020-02-11-09-16'
 
 #VIDEO_PATH = "videos/Le_frelon_asiatique_Vespa_Velutina_devant_ma_ruche_1280x720.mp4"
 #VIDEO_PATH = "videos/Abeilles_contre_frelon_asiatique_640x360.mp4"
-VIDEO_PATH = "videos/Abeilles_Frelons_asiatiques_devant_des_ruches_1280x720.mp4"
-#VIDEO_PATH = "videos/Cette_ruche_est_assiegee_par_des_frelons_asiatiques_1280x720.mp4"
+#VIDEO_PATH = "videos/Abeilles_Frelons_asiatiques_devant_des_ruches_1280x720.mp4"
+VIDEO_PATH = "videos/Cette_ruche_est_assiegee_par_des_frelons_asiatiques_1280x720.mp4"
 
 # Grab path to current working directory
 CWD_PATH = os.getcwd()
