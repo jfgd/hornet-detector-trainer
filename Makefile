@@ -95,21 +95,20 @@ train_frcnnv2: models proto images/test.record images/train.record faster_rcnn_i
 board:
 	PYTHONPATH=$(PYTHON_PATH) tensorboard --logdir training
 
+DATE=$(shell date +%Y-%m-%d-%H-%M)
 export-graph: models
 	@echo "Exporting graph for $(CONFIG)"
 	PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/export_inference_graph.py \
 			--input_type image_tensor \
 			--pipeline_config_path training/$(CONFIG) \
 			--trained_checkpoint_prefix training/model.ckpt-50000 \
-			--output_directory $(EXPORT_GRAPH_PATH)/$(basename $(CONFIG))_$(shell date +%Y-%m-%d-%H-%M)
-
-export-tflite-graph: models
+			--output_directory $(EXPORT_GRAPH_PATH)/$(basename $(CONFIG))_$(DATE)
 	@echo "Exporting tflite graph for $(CONFIG)"
 	PYTHONPATH=$(PYTHON_PATH) python3 models/research/object_detection/export_tflite_ssd_graph.py \
 		--pipeline_config_path=training/$(CONFIG) \
 		--trained_checkpoint_prefix=training/model.ckpt-50000 \
 		--add_postprocessing_op=true \
-		--output_directory=$(EXPORT_GRAPH_PATH)/$(basename $(CONFIG))_tflite_$(shell date +%Y-%m-%d-%H-%M)
+		--output_directory=$(EXPORT_GRAPH_PATH)/$(basename $(CONFIG))_$(DATE)
 
 
 # Label images with labelImg
@@ -126,4 +125,4 @@ label: labelImg/libs/resources.py
 
 
 
-.PHONY: help csv models proto record train_test train train_ssdmbnetv2 train_ssdmbnetv1 train_frcnnv2 export-graph-classic export-graph board label
+.PHONY: help csv models proto record train_test train train_ssdmbnetv2 train_ssdmbnetv1 train_frcnnv2 export-graph board label
