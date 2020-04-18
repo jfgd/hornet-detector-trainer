@@ -1,4 +1,4 @@
-<annotation>
+<annotation verified="yes">
 	<folder>tosort</folder>
 	<filename>jodaille_frelon_2019-09-20-192911_Left.jpg</filename>
 	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/tosort/jodaille_frelon_2019-09-20-192911_Left.jpg</path>
@@ -11,16 +11,4 @@
 		<depth>3</depth>
 	</size>
 	<segmented>0</segmented>
-	<object>
-		<name>hornet</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>44</xmin>
-			<ymin>0</ymin>
-			<xmax>1177</xmax>
-			<ymax>720</ymax>
-		</bndbox>
-	</object>
 </annotation>

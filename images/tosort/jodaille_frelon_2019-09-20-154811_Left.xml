@@ -11,16 +11,4 @@
 		<depth>3</depth>
 	</size>
 	<segmented>0</segmented>
-	<object>
-		<name>hornet</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>17</xmin>
-			<ymin>4</ymin>
-			<xmax>1253</xmax>
-			<ymax>720</ymax>
-		</bndbox>
-	</object>
 </annotation>

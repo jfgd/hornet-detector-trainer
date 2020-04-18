@@ -17,21 +17,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>44</xmin>
-			<ymin>10</ymin>
-			<xmax>1256</xmax>
-			<ymax>720</ymax>
-		</bndbox>
-	</object>	<object>
-		<name>hornet</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>112</xmin>
-			<ymin>236</ymin>
-			<xmax>185</xmax>
-			<ymax>274</ymax>
+			<xmin>644</xmin>
+			<ymin>467</ymin>
+			<xmax>717</xmax>
+			<ymax>505</ymax>
 		</bndbox>
 	</object>
 </annotation>

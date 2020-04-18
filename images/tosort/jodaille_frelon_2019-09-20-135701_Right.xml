@@ -14,13 +14,25 @@
 	<object>
 		<name>hornet</name>
 		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>260</xmin>
+			<ymin>1</ymin>
+			<xmax>321</xmax>
+			<ymax>51</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>19</xmin>
-			<ymin>16</ymin>
-			<xmax>1250</xmax>
-			<ymax>720</ymax>
+			<xmin>816</xmin>
+			<ymin>444</ymin>
+			<xmax>845</xmax>
+			<ymax>476</ymax>
 		</bndbox>
 	</object>
 </annotation>

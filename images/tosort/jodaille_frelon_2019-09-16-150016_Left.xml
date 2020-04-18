@@ -12,15 +12,15 @@
 	</size>
 	<segmented>0</segmented>
 	<object>
-		<name>bee</name>
+		<name>hornet</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>624</xmin>
-			<ymin>83</ymin>
+			<ymin>84</ymin>
 			<xmax>683</xmax>
-			<ymax>129</ymax>
+			<ymax>130</ymax>
 		</bndbox>
 	</object>
 </annotation>

@@ -14,13 +14,13 @@
 	<object>
 		<name>hornet</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
+		<truncated>1</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>62</xmin>
-			<ymin>27</ymin>
-			<xmax>1265</xmax>
-			<ymax>720</ymax>
+			<xmin>1191</xmin>
+			<ymin>401</ymin>
+			<xmax>1280</xmax>
+			<ymax>548</ymax>
 		</bndbox>
 	</object>
 </annotation>
