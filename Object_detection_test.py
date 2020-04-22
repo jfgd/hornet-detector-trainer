@@ -57,7 +57,7 @@ out = cv2.VideoWriter("output.mp4", cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'),
                       3, (640, 360))
 
 # Name of the directory containing the object detection module we're using
-MODEL_NAME = 'graphs/ssdlite_mobilenet_v2_hornet_2020-04-18-18-51'
+MODEL_NAME = 'graphs/ssdlite_mobilenet_v2_hornet_2020-04-22-06-39'
 
 #VIDEO_PATH = "videos/Le_frelon_asiatique_Vespa_Velutina_devant_ma_ruche_1280x720.mp4"
 #VIDEO_PATH = "videos/Abeilles_contre_frelon_asiatique_640x360.mp4"
