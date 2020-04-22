@@ -19,9 +19,12 @@ endif
 help:
 	@echo "Hornet Detector Tensorflow Model Trainer "
 	@echo ""
-	@echo "train:\tTrain tensorflow model"
+	@echo "train:\t\tTrain tensorflow model"
 	@echo "export-graph:\tExport inference graph"
-	@echo "export-tflite-graph:\tExport tflite inference graph"
+	@echo "csv:\t\tCreate images/test_labels.csv & images/train_labels.csv from XML files"
+	@echo "record:\t\tCreate images/test.record & images/train.record from CSV and image files"
+	@echo "board:\t\tRun Tensorboard"
+	@echo "label:\t\tRun labelImg on images/ folder"
 
 # CSV files
 images/test_labels.csv: $(wildcard images/test/*.xml)
