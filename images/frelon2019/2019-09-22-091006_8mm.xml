@@ -1,7 +1,7 @@
 <annotation>
 	<folder>frelon2019</folder>
 	<filename>2019-09-22-091006_8mm.jpg</filename>
-	<path>/home/jody/hornet-detector-trainer/images/frelon2019/2019-09-22-091006_8mm.jpg</path>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/frelon2019/2019-09-22-091006_8mm.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -22,15 +22,16 @@
 			<xmax>608</xmax>
 			<ymax>433</ymax>
 		</bndbox>
-	</object>	<object>
+	</object>
+	<object>
 		<name>bee</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>996</xmin>
-			<ymin>191</ymin>
-			<xmax>1070</xmax>
+			<ymin>203</ymin>
+			<xmax>1060</xmax>
 			<ymax>277</ymax>
 		</bndbox>
 	</object>
