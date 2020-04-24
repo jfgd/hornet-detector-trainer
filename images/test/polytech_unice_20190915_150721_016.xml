@@ -1,0 +1,26 @@
+<annotation>
+	<folder>unice</folder>
+	<filename>polytech_unice_20190915_150721_016.jpg</filename>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/unice/polytech_unice_20190915_150721_016.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1920</width>
+		<height>1080</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1145</xmin>
+			<ymin>400</ymin>
+			<xmax>1210</xmax>
+			<ymax>462</ymax>
+		</bndbox>
+	</object>
+</annotation>

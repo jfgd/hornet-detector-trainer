@@ -1,0 +1,26 @@
+<annotation>
+	<folder>unice2</folder>
+	<filename>polytech_unice_20190915_151027_056.jpg</filename>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/unice2/polytech_unice_20190915_151027_056.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1920</width>
+		<height>1080</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>702</xmin>
+			<ymin>889</ymin>
+			<xmax>786</xmax>
+			<ymax>951</ymax>
+		</bndbox>
+	</object>
+</annotation>
