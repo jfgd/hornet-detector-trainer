@@ -2,6 +2,11 @@
 
 folder="$1"
 
+if [ -z $1 ]
+then
+   folder="images"
+fi
+
 if ! [ -d ${folder}/test ]
 then
     echo "test folder not found"
@@ -52,7 +57,12 @@ train="${folder}/train"
 nb_test=$(ls -1 ${test}/*.xml | wc -l)
 nb_train=$(ls -1 ${train}/*.xml | wc -l)
 
-printf "NB TEST: %d (%d)  TRAIN: %d (%d) TOTAL: %d\n" $nb_test $(echo "100*$nb_test/($nb_test+$nb_train)" | bc) $nb_train  $(echo "100*$nb_train/($nb_test+$nb_train)" | bc) $(($nb_test+$nb_train))
+export LC_NUMERIC="en_US.UTF-8"
+
+printf "NB TEST: %d (%.2f)  TRAIN: %d (%.2f) TOTAL: %d\n" \
+       $nb_test  $(echo "scale=2; 100*$nb_test/($nb_test+$nb_train)" | bc) \
+       $nb_train $(echo "scale=2; 100*$nb_train/($nb_test+$nb_train)" | bc) \
+       $(($nb_test+$nb_train))
 
 
 for file in ${test}/* ; do
@@ -66,3 +76,13 @@ for file in ${train}/* ; do
 
     check_xml "${file}"
 done
+
+
+# Find duplicates
+
+if ! [ -z $(which fdupes) ]
+then
+    fdupes ${test} ${train}
+else
+    echo "WARNING: fdupes not found!"
+fi
