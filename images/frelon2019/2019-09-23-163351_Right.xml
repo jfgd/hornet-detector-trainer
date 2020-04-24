@@ -1,0 +1,15 @@
+<annotation>
+	<folder>frelon_2019_bis</folder>
+	<filename>2019-09-23-163351_Right.jpg</filename>
+	<path>/home/jody/hornet-detector-trainer/images/frelon_2019_bis/2019-09-23-163351_Right.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+
+</annotation>

@@ -1,0 +1,37 @@
+<annotation>
+	<folder>frelon_2019_bis</folder>
+	<filename>2019-09-22-130611_Right.jpg</filename>
+	<path>/home/jody/hornet-detector-trainer/images/frelon_2019_bis/2019-09-22-130611_Right.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>836</xmin>
+			<ymin>490</ymin>
+			<xmax>876</xmax>
+			<ymax>528</ymax>
+		</bndbox>
+	</object>	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>456</xmin>
+			<ymin>221</ymin>
+			<xmax>496</xmax>
+			<ymax>283</ymax>
+		</bndbox>
+	</object>
+</annotation>
