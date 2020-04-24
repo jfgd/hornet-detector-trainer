@@ -39,6 +39,19 @@ function check_label_name()
     # fi
 }
 
+function check_file_name()
+{
+    name="${1}"
+    xml="${name%.*}.xml"
+    filename=$(grep -o "<filename>.*</filename>" "$xml" | sed 's,^<filename>,,g' | sed 's,</filename>$,,g')
+
+    name=$(basename "${name}")
+    if [[ "${name}" != "${filename}" ]]
+    then
+	printf "WARNING: XML file %s has filename %s instead of %s\n" "${xml}" "${filename}" "${name}"
+    fi
+}
+
 function check_xml()
 {
     name="${1}"
@@ -49,6 +62,8 @@ function check_xml()
     fi
 
     check_label_name "${name%.*}.xml"
+
+    check_file_name "${name}"
 }
 
 test="${folder}/test"
@@ -86,3 +101,7 @@ then
 else
     echo "WARNING: fdupes not found!"
 fi
+
+
+make csv 2> /dev/null
+
