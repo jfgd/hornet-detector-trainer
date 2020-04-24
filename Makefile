@@ -124,7 +124,7 @@ labelImg/libs/resources.py: labelImg
 
 # Run labeImg
 label: labelImg/libs/resources.py
-	python3 labelImg/labelImg.py images/
+	python3 labelImg/labelImg.py images/ training/labels.txt
 
 
 
