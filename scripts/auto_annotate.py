@@ -17,7 +17,7 @@ from pascal_voc_writer import Writer
 
 print("Tensorflow version: ", tf.__version__)
 
-PATH_TO_CKPT = 'graphs/ssdlite_mobilenet_v2_hornet_2020-04-22-06-39/frozen_inference_graph.pb'
+PATH_TO_CKPT = 'graphs/latest/frozen_inference_graph.pb'
 PATH_TO_LABELS = 'training/label_map.pbtxt'
 
 NUM_CLASSES = 2
