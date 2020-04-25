@@ -1,0 +1,26 @@
+<annotation>
+	<folder>vv</folder>
+	<filename>bing154.VESPA_VELUTINA_NIGRITHORAXIS_2.jpg</filename>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/vv/bing154.VESPA_VELUTINA_NIGRITHORAXIS_2.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>606</width>
+		<height>457</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>122</xmin>
+			<ymin>79</ymin>
+			<xmax>432</xmax>
+			<ymax>338</ymax>
+		</bndbox>
+	</object>
+</annotation>

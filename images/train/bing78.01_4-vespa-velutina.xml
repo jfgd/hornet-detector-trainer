@@ -1,0 +1,26 @@
+<annotation>
+	<folder>vv</folder>
+	<filename>bing78.01_4-vespa-velutina.jpg</filename>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/vv/bing78.01_4-vespa-velutina.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>480</width>
+		<height>282</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>116</xmin>
+			<ymin>29</ymin>
+			<xmax>394</xmax>
+			<ymax>210</ymax>
+		</bndbox>
+	</object>
+</annotation>

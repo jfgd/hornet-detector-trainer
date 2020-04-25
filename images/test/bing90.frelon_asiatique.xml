@@ -1,0 +1,26 @@
+<annotation>
+	<folder>vv</folder>
+	<filename>bing90.frelon_asiatique.jpg</filename>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/vv/bing90.frelon_asiatique.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>584</width>
+		<height>404</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>64</xmin>
+			<ymin>42</ymin>
+			<xmax>500</xmax>
+			<ymax>373</ymax>
+		</bndbox>
+	</object>
+</annotation>

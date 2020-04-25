@@ -1,0 +1,26 @@
+<annotation>
+	<folder>vv</folder>
+	<filename>bing204.66_23_G.jpg</filename>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/vv/bing204.66_23_G.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>536</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>121</xmin>
+			<ymin>31</ymin>
+			<xmax>455</xmax>
+			<ymax>536</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>vv</folder>
+	<filename>bing131.v-velutina-nigrithorax-feeding-on-fennel-foeniculum-vulgare-4.jpg</filename>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/vv/bing131.v-velutina-nigrithorax-feeding-on-fennel-foeniculum-vulgare-4.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4916</width>
+		<height>3320</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1422</xmin>
+			<ymin>724</ymin>
+			<xmax>3900</xmax>
+			<ymax>2771</ymax>
+		</bndbox>
+	</object>
+</annotation>

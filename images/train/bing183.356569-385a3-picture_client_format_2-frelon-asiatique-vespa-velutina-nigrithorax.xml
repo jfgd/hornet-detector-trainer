@@ -1,0 +1,26 @@
+<annotation>
+	<folder>vv</folder>
+	<filename>bing183.356569-385a3-picture_client_format_2-frelon-asiatique-vespa-velutina-nigrithorax.jpg</filename>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/vv/bing183.356569-385a3-picture_client_format_2-frelon-asiatique-vespa-velutina-nigrithorax.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>664</width>
+		<height>439</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>105</xmin>
+			<ymin>89</ymin>
+			<xmax>596</xmax>
+			<ymax>377</ymax>
+		</bndbox>
+	</object>
+</annotation>
