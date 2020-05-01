@@ -33,10 +33,10 @@ function check_label_name()
 	atleastone=1
     done < <(grep -o "<name>.*</name>" "$xml" | sed 's,^<name>,,g' | sed 's,</name>$,,g')
 
-    # if [[ ${atleastone} == 0 ]]
-    # then
-    # 	echo "WARNING: file ${xml} has no labels"
-    # fi
+    if [[ ${atleastone} == 0 ]]
+    then
+	echo "WARNING: file ${xml} has no labels"
+    fi
 }
 
 function check_file_name()
@@ -91,7 +91,6 @@ for file in ${train}/* ; do
 
     check_xml "${file}"
 done
-
 
 # Find duplicates
 
