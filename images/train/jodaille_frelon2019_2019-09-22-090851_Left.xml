@@ -1,0 +1,26 @@
+<annotation>
+	<folder>frelon2019</folder>
+	<filename>jodaille_frelon2019_2019-09-22-090851_Left.jpg</filename>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/frelon2019/2019-09-22-090851_Left.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>809</xmin>
+			<ymin>340</ymin>
+			<xmax>851</xmax>
+			<ymax>402</ymax>
+		</bndbox>
+	</object>
+</annotation>
