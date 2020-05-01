@@ -2,7 +2,7 @@
 
 # Move ~20% of images in test/ to others go in train/
 
-for img in "${1}"/* #"toshuffle/!(*.xml)"
+for img in "${1}"/*
 do
     if [[ $img =~ \.xml$ ]]
     then
@@ -10,12 +10,12 @@ do
 	continue
     fi
 
-    if [[ $(( ( RANDOM % 100 )  + 1 )) > 80 ]]
+    if [[ $(( ( RANDOM % 100 )  + 1 )) > 81 ]]
     then
-	echo "git mv ${img%.*}.* test/"
+	#echo "git mv ${img%.*}.* test/"
 	git mv  ${img%.*}.* test/
     else
-	echo "git mv ${img%.*}.* train/"
+	#echo "git mv ${img%.*}.* train/"
 	git mv ${img%.*}.* train/
     fi
 done
