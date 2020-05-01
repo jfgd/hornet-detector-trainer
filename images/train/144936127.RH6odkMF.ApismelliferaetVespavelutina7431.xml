@@ -1,7 +1,7 @@
 <annotation>
 	<folder>train</folder>
 	<filename>144936127.RH6odkMF.ApismelliferaetVespavelutina7431.jpg</filename>
-	<path>/home/jeremy/Documents/HornetKiller/images/train/144936127.RH6odkMF.ApismelliferaetVespavelutina7431.jpg</path>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/train/144936127.RH6odkMF.ApismelliferaetVespavelutina7431.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -68,7 +68,7 @@
 			<xmin>279</xmin>
 			<ymin>324</ymin>
 			<xmax>337</xmax>
-			<ymax>361</ymax>
+			<ymax>376</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -77,10 +77,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>154</xmin>
+			<xmin>131</xmin>
 			<ymin>308</ymin>
 			<xmax>206</xmax>
-			<ymax>352</ymax>
+			<ymax>372</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -115,8 +115,8 @@
 		<bndbox>
 			<xmin>218</xmin>
 			<ymin>315</ymin>
-			<xmax>264</xmax>
-			<ymax>355</ymax>
+			<xmax>280</xmax>
+			<ymax>365</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -127,8 +127,8 @@
 		<bndbox>
 			<xmin>324</xmin>
 			<ymin>302</ymin>
-			<xmax>374</xmax>
-			<ymax>338</ymax>
+			<xmax>412</xmax>
+			<ymax>349</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -141,6 +141,18 @@
 			<ymin>312</ymin>
 			<xmax>538</xmax>
 			<ymax>350</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>67</xmin>
+			<ymin>376</ymin>
+			<xmax>199</xmax>
+			<ymax>467</ymax>
 		</bndbox>
 	</object>
 </annotation>

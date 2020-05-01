@@ -1,7 +1,7 @@
 <annotation>
-	<folder>train</folder>
+	<folder>test</folder>
 	<filename>Abeilles_contre_frelon_asiatique_640x360_059.jpeg</filename>
-	<path>/home/jeremy/Documents/HornetKiller/images/train/Abeilles_contre_frelon_asiatique_640x360_059.jpeg</path>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/test/Abeilles_contre_frelon_asiatique_640x360_059.jpeg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -29,8 +29,8 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>443</xmin>
-			<ymin>259</ymin>
+			<xmin>416</xmin>
+			<ymin>243</ymin>
 			<xmax>463</xmax>
 			<ymax>282</ymax>
 		</bndbox>
@@ -41,10 +41,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>436</xmin>
-			<ymin>294</ymin>
-			<xmax>462</xmax>
-			<ymax>319</ymax>
+			<xmin>430</xmin>
+			<ymin>282</ymin>
+			<xmax>463</xmax>
+			<ymax>318</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -53,10 +53,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>344</xmin>
-			<ymin>249</ymin>
-			<xmax>375</xmax>
-			<ymax>267</ymax>
+			<xmin>341</xmin>
+			<ymin>247</ymin>
+			<xmax>373</xmax>
+			<ymax>273</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -65,10 +65,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>388</xmin>
-			<ymin>248</ymin>
-			<xmax>419</xmax>
-			<ymax>265</ymax>
+			<xmin>379</xmin>
+			<ymin>238</ymin>
+			<xmax>410</xmax>
+			<ymax>270</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -77,10 +77,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>313</xmin>
-			<ymin>208</ymin>
-			<xmax>339</xmax>
-			<ymax>242</ymax>
+			<xmin>307</xmin>
+			<ymin>213</ymin>
+			<xmax>333</xmax>
+			<ymax>247</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -89,10 +89,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>340</xmin>
-			<ymin>215</ymin>
-			<xmax>369</xmax>
-			<ymax>237</ymax>
+			<xmin>336</xmin>
+			<ymin>212</ymin>
+			<xmax>371</xmax>
+			<ymax>240</ymax>
 		</bndbox>
 	</object>
 </annotation>

@@ -1,7 +1,7 @@
 <annotation>
 	<folder>train</folder>
 	<filename>abeille-defense-nb1.jpg</filename>
-	<path>/home/jeremy/Documents/HornetKiller/images/train/abeille-defense-nb1.jpg</path>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/train/abeille-defense-nb1.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -65,8 +65,8 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>24</xmin>
-			<ymin>300</ymin>
+			<xmin>3</xmin>
+			<ymin>261</ymin>
 			<xmax>73</xmax>
 			<ymax>364</ymax>
 		</bndbox>

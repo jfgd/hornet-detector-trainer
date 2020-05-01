@@ -1,7 +1,7 @@
 <annotation>
 	<folder>train</folder>
 	<filename>Le_frelon_asiatique_Vespa_Velutina_devant_ma_ruche_1280x720_013.jpeg</filename>
-	<path>/home/jeremy/Documents/HornetKiller/images/train/Le_frelon_asiatique_Vespa_Velutina_devant_ma_ruche_1280x720_013.jpeg</path>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/train/Le_frelon_asiatique_Vespa_Velutina_devant_ma_ruche_1280x720_013.jpeg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -65,10 +65,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>350</xmin>
-			<ymin>473</ymin>
-			<xmax>380</xmax>
-			<ymax>527</ymax>
+			<xmin>348</xmin>
+			<ymin>389</ymin>
+			<xmax>450</xmax>
+			<ymax>462</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -77,10 +77,58 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>294</xmin>
+			<xmin>281</xmin>
 			<ymin>357</ymin>
 			<xmax>342</xmax>
-			<ymax>399</ymax>
+			<ymax>433</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>167</xmin>
+			<ymin>436</ymin>
+			<xmax>342</xmax>
+			<ymax>523</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>351</xmin>
+			<ymin>467</ymin>
+			<xmax>429</xmax>
+			<ymax>529</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>82</xmin>
+			<ymin>529</ymin>
+			<xmax>379</xmax>
+			<ymax>598</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>76</xmin>
+			<ymin>600</ymin>
+			<xmax>258</xmax>
+			<ymax>697</ymax>
 		</bndbox>
 	</object>
 </annotation>

@@ -1,7 +1,7 @@
 <annotation>
 	<folder>train</folder>
 	<filename>457883-57f8e-picture_client_format_2-vespa-velutina-a-loentree-doune-ruche.jpg</filename>
-	<path>/home/jeremy/Documents/HornetKiller/images/train/457883-57f8e-picture_client_format_2-vespa-velutina-a-loentree-doune-ruche.jpg</path>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/train/457883-57f8e-picture_client_format_2-vespa-velutina-a-loentree-doune-ruche.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -43,7 +43,7 @@
 		<bndbox>
 			<xmin>372</xmin>
 			<ymin>332</ymin>
-			<xmax>405</xmax>
+			<xmax>418</xmax>
 			<ymax>389</ymax>
 		</bndbox>
 	</object>
@@ -89,10 +89,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>417</xmin>
-			<ymin>282</ymin>
-			<xmax>453</xmax>
-			<ymax>316</ymax>
+			<xmin>421</xmin>
+			<ymin>281</ymin>
+			<xmax>531</xmax>
+			<ymax>376</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -101,10 +101,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>387</xmin>
-			<ymin>278</ymin>
-			<xmax>419</xmax>
-			<ymax>309</ymax>
+			<xmin>392</xmin>
+			<ymin>277</ymin>
+			<xmax>423</xmax>
+			<ymax>333</ymax>
 		</bndbox>
 	</object>
 </annotation>

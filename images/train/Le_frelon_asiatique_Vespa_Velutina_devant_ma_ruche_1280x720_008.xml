@@ -1,7 +1,7 @@
 <annotation>
 	<folder>train</folder>
 	<filename>Le_frelon_asiatique_Vespa_Velutina_devant_ma_ruche_1280x720_008.jpeg</filename>
-	<path>/home/jeremy/Documents/HornetKiller/images/train/Le_frelon_asiatique_Vespa_Velutina_devant_ma_ruche_1280x720_008.jpeg</path>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/train/Le_frelon_asiatique_Vespa_Velutina_devant_ma_ruche_1280x720_008.jpeg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -90,9 +90,9 @@
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>274</xmin>
-			<ymin>447</ymin>
-			<xmax>313</xmax>
-			<ymax>497</ymax>
+			<ymin>433</ymin>
+			<xmax>335</xmax>
+			<ymax>511</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -113,10 +113,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>196</xmin>
+			<xmin>139</xmin>
 			<ymin>550</ymin>
 			<xmax>235</xmax>
-			<ymax>613</ymax>
+			<ymax>625</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -165,6 +165,90 @@
 			<ymin>371</ymin>
 			<xmax>484</xmax>
 			<ymax>436</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>15</xmin>
+			<ymin>543</ymin>
+			<xmax>128</xmax>
+			<ymax>644</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>30</xmin>
+			<ymin>435</ymin>
+			<xmax>111</xmax>
+			<ymax>535</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>192</xmin>
+			<ymin>359</ymin>
+			<xmax>371</xmax>
+			<ymax>431</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>382</xmin>
+			<ymin>332</ymin>
+			<xmax>438</xmax>
+			<ymax>388</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>186</xmin>
+			<ymin>463</ymin>
+			<xmax>297</xmax>
+			<ymax>569</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>118</xmin>
+			<ymin>400</ymin>
+			<xmax>194</xmax>
+			<ymax>457</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>254</xmin>
+			<ymin>292</ymin>
+			<xmax>331</xmax>
+			<ymax>356</ymax>
 		</bndbox>
 	</object>
 </annotation>

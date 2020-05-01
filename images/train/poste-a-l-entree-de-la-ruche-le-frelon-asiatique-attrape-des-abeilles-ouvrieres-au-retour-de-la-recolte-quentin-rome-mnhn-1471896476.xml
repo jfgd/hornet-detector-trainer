@@ -1,7 +1,7 @@
 <annotation>
 	<folder>train</folder>
 	<filename>poste-a-l-entree-de-la-ruche-le-frelon-asiatique-attrape-des-abeilles-ouvrieres-au-retour-de-la-recolte-quentin-rome-mnhn-1471896476.jpg</filename>
-	<path>/home/jeremy/Documents/HornetKiller/images/train/poste-a-l-entree-de-la-ruche-le-frelon-asiatique-attrape-des-abeilles-ouvrieres-au-retour-de-la-recolte-quentin-rome-mnhn-1471896476.jpg</path>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/train/poste-a-l-entree-de-la-ruche-le-frelon-asiatique-attrape-des-abeilles-ouvrieres-au-retour-de-la-recolte-quentin-rome-mnhn-1471896476.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -78,9 +78,9 @@
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>940</xmin>
-			<ymin>389</ymin>
-			<xmax>1046</xmax>
-			<ymax>455</ymax>
+			<ymin>345</ymin>
+			<xmax>1161</xmax>
+			<ymax>464</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -89,10 +89,22 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>871</xmin>
+			<xmin>865</xmin>
 			<ymin>345</ymin>
 			<xmax>981</xmax>
-			<ymax>388</ymax>
+			<ymax>415</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>893</xmin>
+			<ymin>423</ymin>
+			<xmax>1027</xmax>
+			<ymax>561</ymax>
 		</bndbox>
 	</object>
 </annotation>

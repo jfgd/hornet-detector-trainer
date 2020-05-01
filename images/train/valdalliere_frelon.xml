@@ -1,7 +1,7 @@
 <annotation>
 	<folder>train</folder>
 	<filename>valdalliere_frelon.jpg</filename>
-	<path>/home/jeremy/Documents/HornetKiller/images/train/valdalliere_frelon.jpg</path>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/train/valdalliere_frelon.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -67,8 +67,8 @@
 		<bndbox>
 			<xmin>122</xmin>
 			<ymin>147</ymin>
-			<xmax>158</xmax>
-			<ymax>180</ymax>
+			<xmax>165</xmax>
+			<ymax>224</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -101,10 +101,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>56</xmin>
-			<ymin>152</ymin>
-			<xmax>120</xmax>
-			<ymax>198</ymax>
+			<xmin>37</xmin>
+			<ymin>131</ymin>
+			<xmax>124</xmax>
+			<ymax>201</ymax>
 		</bndbox>
 	</object>
 </annotation>

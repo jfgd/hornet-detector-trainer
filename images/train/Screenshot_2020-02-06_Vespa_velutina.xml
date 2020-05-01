@@ -1,7 +1,7 @@
 <annotation>
 	<folder>train</folder>
 	<filename>Screenshot_2020-02-06_Vespa_velutina.png</filename>
-	<path>/home/jeremy/Documents/HornetKiller/images/train/Screenshot_2020-02-06_Vespa_velutina.png</path>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/train/Screenshot_2020-02-06_Vespa_velutina.png</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -91,8 +91,8 @@
 		<bndbox>
 			<xmin>722</xmin>
 			<ymin>13</ymin>
-			<xmax>823</xmax>
-			<ymax>116</ymax>
+			<xmax>821</xmax>
+			<ymax>178</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -105,6 +105,18 @@
 			<ymin>14</ymin>
 			<xmax>1016</xmax>
 			<ymax>144</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>656</xmin>
+			<ymin>33</ymin>
+			<xmax>742</xmax>
+			<ymax>151</ymax>
 		</bndbox>
 	</object>
 </annotation>

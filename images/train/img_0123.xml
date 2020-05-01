@@ -1,7 +1,7 @@
 <annotation>
 	<folder>train</folder>
 	<filename>img_0123.jpg</filename>
-	<path>/home/jeremy/Documents/HornetKiller/images/train/img_0123.jpg</path>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/train/img_0123.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -141,6 +141,42 @@
 			<ymin>161</ymin>
 			<xmax>366</xmax>
 			<ymax>191</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>166</xmin>
+			<ymin>147</ymin>
+			<xmax>252</xmax>
+			<ymax>175</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>308</xmin>
+			<ymin>159</ymin>
+			<xmax>332</xmax>
+			<ymax>173</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>341</xmin>
+			<ymin>123</ymin>
+			<xmax>377</xmax>
+			<ymax>158</ymax>
 		</bndbox>
 	</object>
 </annotation>

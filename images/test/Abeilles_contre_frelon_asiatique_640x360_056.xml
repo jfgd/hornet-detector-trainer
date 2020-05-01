@@ -1,7 +1,7 @@
 <annotation>
-	<folder>train</folder>
+	<folder>test</folder>
 	<filename>Abeilles_contre_frelon_asiatique_640x360_056.jpeg</filename>
-	<path>/home/jeremy/Documents/HornetKiller/images/train/Abeilles_contre_frelon_asiatique_640x360_056.jpeg</path>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/test/Abeilles_contre_frelon_asiatique_640x360_056.jpeg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -41,10 +41,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>415</xmin>
-			<ymin>249</ymin>
+			<xmin>395</xmin>
+			<ymin>244</ymin>
 			<xmax>447</xmax>
-			<ymax>274</ymax>
+			<ymax>273</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -81,6 +81,30 @@
 			<ymin>215</ymin>
 			<xmax>322</xmax>
 			<ymax>235</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>322</xmin>
+			<ymin>190</ymin>
+			<xmax>363</xmax>
+			<ymax>229</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>379</xmin>
+			<ymin>224</ymin>
+			<xmax>457</xmax>
+			<ymax>248</ymax>
 		</bndbox>
 	</object>
 </annotation>

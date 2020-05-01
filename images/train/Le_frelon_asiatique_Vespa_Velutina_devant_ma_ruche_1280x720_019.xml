@@ -1,7 +1,7 @@
 <annotation>
 	<folder>train</folder>
 	<filename>Le_frelon_asiatique_Vespa_Velutina_devant_ma_ruche_1280x720_019.jpeg</filename>
-	<path>/home/jeremy/Documents/HornetKiller/images/train/Le_frelon_asiatique_Vespa_Velutina_devant_ma_ruche_1280x720_019.jpeg</path>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/train/Le_frelon_asiatique_Vespa_Velutina_devant_ma_ruche_1280x720_019.jpeg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -17,9 +17,9 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>451</xmin>
-			<ymin>330</ymin>
-			<xmax>495</xmax>
+			<xmin>432</xmin>
+			<ymin>309</ymin>
+			<xmax>490</xmax>
 			<ymax>372</ymax>
 		</bndbox>
 	</object>
@@ -43,8 +43,8 @@
 		<bndbox>
 			<xmin>214</xmin>
 			<ymin>270</ymin>
-			<xmax>281</xmax>
-			<ymax>328</ymax>
+			<xmax>328</xmax>
+			<ymax>320</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -78,8 +78,8 @@
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>165</xmin>
-			<ymin>530</ymin>
-			<xmax>233</xmax>
+			<ymin>483</ymin>
+			<xmax>248</xmax>
 			<ymax>606</ymax>
 		</bndbox>
 	</object>
@@ -91,8 +91,8 @@
 		<bndbox>
 			<xmin>260</xmin>
 			<ymin>392</ymin>
-			<xmax>318</xmax>
-			<ymax>458</ymax>
+			<xmax>346</xmax>
+			<ymax>510</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -101,10 +101,34 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>354</xmin>
+			<xmin>340</xmin>
 			<ymin>311</ymin>
 			<xmax>431</xmax>
-			<ymax>348</ymax>
+			<ymax>424</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>109</xmin>
+			<ymin>381</ymin>
+			<xmax>264</xmax>
+			<ymax>478</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>249</xmin>
+			<ymin>331</ymin>
+			<xmax>341</xmax>
+			<ymax>401</ymax>
 		</bndbox>
 	</object>
 </annotation>

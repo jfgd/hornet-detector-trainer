@@ -1,7 +1,7 @@
 <annotation>
-	<folder>vv</folder>
+	<folder>train</folder>
 	<filename>bing200.Vespa-velutina-Lepeletier-1836-952782.jpg</filename>
-	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/vv/bing200.Vespa-velutina-Lepeletier-1836-952782.jpg</path>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/train/bing200.Vespa-velutina-Lepeletier-1836-952782.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -21,17 +21,6 @@
 			<ymin>116</ymin>
 			<xmax>565</xmax>
 			<ymax>699</ymax>
-		</bndbox>
-	</object>	<object>
-		<name>hornet</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>532</xmin>
-			<ymin>416</ymin>
-			<xmax>625</xmax>
-			<ymax>460</ymax>
 		</bndbox>
 	</object>
 </annotation>

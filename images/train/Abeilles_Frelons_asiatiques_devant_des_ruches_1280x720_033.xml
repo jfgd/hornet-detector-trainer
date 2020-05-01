@@ -1,7 +1,7 @@
 <annotation>
 	<folder>train</folder>
 	<filename>Abeilles_Frelons_asiatiques_devant_des_ruches_1280x720_033.jpeg</filename>
-	<path>/home/jeremy/Documents/HornetKiller/images/train/Abeilles_Frelons_asiatiques_devant_des_ruches_1280x720_033.jpeg</path>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/train/Abeilles_Frelons_asiatiques_devant_des_ruches_1280x720_033.jpeg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -17,8 +17,8 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>461</xmin>
-			<ymin>433</ymin>
+			<xmin>444</xmin>
+			<ymin>431</ymin>
 			<xmax>556</xmax>
 			<ymax>482</ymax>
 		</bndbox>
