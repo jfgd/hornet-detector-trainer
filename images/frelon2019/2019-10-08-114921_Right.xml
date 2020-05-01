@@ -11,5 +11,16 @@
 		<depth>3</depth>
 	</size>
 	<segmented>0</segmented>
-
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>837</xmin>
+			<ymin>515</ymin>
+			<xmax>866</xmax>
+			<ymax>544</ymax>
+		</bndbox>
+	</object>
 </annotation>

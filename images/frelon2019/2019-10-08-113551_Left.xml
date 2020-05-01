@@ -17,10 +17,21 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>1036</xmin>
-			<ymin>559</ymin>
-			<xmax>1081</xmax>
-			<ymax>614</ymax>
+			<xmin>1034</xmin>
+			<ymin>563</ymin>
+			<xmax>1089</xmax>
+			<ymax>618</ymax>
+		</bndbox>
+	</object>	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1147</xmin>
+			<ymin>479</ymin>
+			<xmax>1183</xmax>
+			<ymax>517</ymax>
 		</bndbox>
 	</object>
 </annotation>

@@ -12,15 +12,15 @@
 	</size>
 	<segmented>0</segmented>
 	<object>
-		<name>hornet</name>
+		<name>bee</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>446</xmin>
-			<ymin>335</ymin>
-			<xmax>490</xmax>
-			<ymax>407</ymax>
+			<xmin>802</xmin>
+			<ymin>676</ymin>
+			<xmax>850</xmax>
+			<ymax>715</ymax>
 		</bndbox>
 	</object>	<object>
 		<name>bee</name>
@@ -28,10 +28,21 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>810</xmin>
-			<ymin>676</ymin>
-			<xmax>859</xmax>
-			<ymax>714</ymax>
+			<xmin>787</xmin>
+			<ymin>376</ymin>
+			<xmax>820</xmax>
+			<ymax>408</ymax>
+		</bndbox>
+	</object>	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>436</xmin>
+			<ymin>341</ymin>
+			<xmax>489</xmax>
+			<ymax>414</ymax>
 		</bndbox>
 	</object>
 </annotation>

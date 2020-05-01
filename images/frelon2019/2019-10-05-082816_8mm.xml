@@ -1,7 +1,7 @@
 <annotation>
-	<folder>frelon_2019_bis</folder>
+	<folder>frelon2019</folder>
 	<filename>2019-10-05-082816_8mm.jpg</filename>
-	<path>/home/jody/hornet-detector-trainer/images/frelon_2019_bis/2019-10-05-082816_8mm.jpg</path>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/frelon2019/2019-10-05-082816_8mm.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -17,43 +17,46 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>1003</xmin>
-			<ymin>322</ymin>
-			<xmax>1059</xmax>
-			<ymax>394</ymax>
+			<xmin>1088</xmin>
+			<ymin>402</ymin>
+			<xmax>1144</xmax>
+			<ymax>474</ymax>
 		</bndbox>
-	</object>	<object>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>999</xmin>
+			<ymin>321</ymin>
+			<xmax>1058</xmax>
+			<ymax>396</ymax>
+		</bndbox>
+	</object>
+	<object>
 		<name>hornet</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>374</xmin>
-			<ymin>330</ymin>
-			<xmax>458</xmax>
-			<ymax>457</ymax>
+			<ymin>329</ymin>
+			<xmax>448</xmax>
+			<ymax>459</ymax>
 		</bndbox>
-	</object>	<object>
+	</object>
+	<object>
 		<name>bee</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>1086</xmin>
-			<ymin>397</ymin>
-			<xmax>1146</xmax>
-			<ymax>468</ymax>
-		</bndbox>
-	</object>	<object>
-		<name>bee</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>981</xmin>
-			<ymin>207</ymin>
-			<xmax>1051</xmax>
-			<ymax>272</ymax>
+			<xmin>986</xmin>
+			<ymin>206</ymin>
+			<xmax>1045</xmax>
+			<ymax>271</ymax>
 		</bndbox>
 	</object>
 </annotation>
