@@ -1,0 +1,95 @@
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=2.72s).
+Accumulating evaluation results...
+DONE (t=0.30s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.234
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.629
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.111
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.100
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.232
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.287
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.265
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.328
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.340
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.147
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.341
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.441
+INFO:tensorflow:Finished evaluation at 2020-05-02-13:18:28
+I0502 13:18:28.066443 140297376626560 evaluation.py:275] Finished evaluation at 2020-05-02-13:18:28
+INFO:tensorflow:Saving dict for global step 50000: DetectionBoxes_Precision/mAP = 0.23445326, DetectionBoxes_Precision/mAP (large) = 0.28731778, DetectionBoxes_Precision/mAP (medium) = 0.2317055, DetectionBoxes_Precision/mAP (small) = 0.09980644, DetectionBoxes_Precision/mAP@.50IOU = 0.6287455, DetectionBoxes_Precision/mAP@.75IOU = 0.11102782, DetectionBoxes_Recall/AR@1 = 0.2646621, DetectionBoxes_Recall/AR@10 = 0.3278324, DetectionBoxes_Recall/AR@100 = 0.33966967, DetectionBoxes_Recall/AR@100 (large) = 0.44115087, DetectionBoxes_Recall/AR@100 (medium) = 0.3410377, DetectionBoxes_Recall/AR@100 (small) = 0.14666666, Loss/classification_loss = 4.228521, Loss/localization_loss = 1.1892321, Loss/regularization_loss = 0.31658176, Loss/total_loss = 5.734339, global_step = 50000, learning_rate = 0.004, loss = 5.734339
+I0502 13:18:28.066712 140297376626560 estimator.py:2049] Saving dict for global step 50000: DetectionBoxes_Precision/mAP = 0.23445326, DetectionBoxes_Precision/mAP (large) = 0.28731778, DetectionBoxes_Precision/mAP (medium) = 0.2317055, DetectionBoxes_Precision/mAP (small) = 0.09980644, DetectionBoxes_Precision/mAP@.50IOU = 0.6287455, DetectionBoxes_Precision/mAP@.75IOU = 0.11102782, DetectionBoxes_Recall/AR@1 = 0.2646621, DetectionBoxes_Recall/AR@10 = 0.3278324, DetectionBoxes_Recall/AR@100 = 0.33966967, DetectionBoxes_Recall/AR@100 (large) = 0.44115087, DetectionBoxes_Recall/AR@100 (medium) = 0.3410377, DetectionBoxes_Recall/AR@100 (small) = 0.14666666, Loss/classification_loss = 4.228521, Loss/localization_loss = 1.1892321, Loss/regularization_loss = 0.31658176, Loss/total_loss = 5.734339, global_step = 50000, learning_rate = 0.004, loss = 5.734339
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 50000: training/model.ckpt-50000
+I0502 13:18:28.072733 140297376626560 estimator.py:2109] Saving 'checkpoint_path' summary for global step 50000: training/model.ckpt-50000
+INFO:tensorflow:Performing the final export in the end of training.
+I0502 13:18:28.073710 140297376626560 exporter.py:410] Performing the final export in the end of training.
+WARNING:tensorflow:From /content/hornet-detector-trainer/models/research/object_detection/inputs.py:750: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0502 13:18:28.084053 140297376626560 module_wrapper.py:139] From /content/hornet-detector-trainer/models/research/object_detection/inputs.py:750: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+INFO:tensorflow:Calling model_fn.
+I0502 13:18:28.297466 140297376626560 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:depth of additional conv before box predictor: 0
+I0502 13:18:30.317697 140297376626560 convolutional_box_predictor.py:151] depth of additional conv before box predictor: 0
+INFO:tensorflow:depth of additional conv before box predictor: 0
+I0502 13:18:30.392333 140297376626560 convolutional_box_predictor.py:151] depth of additional conv before box predictor: 0
+INFO:tensorflow:depth of additional conv before box predictor: 0
+I0502 13:18:30.474223 140297376626560 convolutional_box_predictor.py:151] depth of additional conv before box predictor: 0
+INFO:tensorflow:depth of additional conv before box predictor: 0
+I0502 13:18:30.547104 140297376626560 convolutional_box_predictor.py:151] depth of additional conv before box predictor: 0
+INFO:tensorflow:depth of additional conv before box predictor: 0
+I0502 13:18:30.624056 140297376626560 convolutional_box_predictor.py:151] depth of additional conv before box predictor: 0
+INFO:tensorflow:depth of additional conv before box predictor: 0
+I0502 13:18:30.703909 140297376626560 convolutional_box_predictor.py:151] depth of additional conv before box predictor: 0
+WARNING:tensorflow:From /content/hornet-detector-trainer/models/research/object_detection/model_lib.py:426: The name tf.saved_model.signature_constants.PREDICT_METHOD_NAME is deprecated. Please use tf.saved_model.PREDICT_METHOD_NAME instead.
+
+W0502 13:18:31.170711 140297376626560 module_wrapper.py:139] From /content/hornet-detector-trainer/models/research/object_detection/model_lib.py:426: The name tf.saved_model.signature_constants.PREDICT_METHOD_NAME is deprecated. Please use tf.saved_model.PREDICT_METHOD_NAME instead.
+
+INFO:tensorflow:Done calling model_fn.
+I0502 13:18:31.475670 140297376626560 estimator.py:1150] Done calling model_fn.
+WARNING:tensorflow:From /tensorflow-1.15.2/python3.6/tensorflow_core/python/saved_model/signature_def_utils_impl.py:201: build_tensor_info (from tensorflow.python.saved_model.utils_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.utils.build_tensor_info or tf.compat.v1.saved_model.build_tensor_info.
+W0502 13:18:31.475940 140297376626560 deprecation.py:323] From /tensorflow-1.15.2/python3.6/tensorflow_core/python/saved_model/signature_def_utils_impl.py:201: build_tensor_info (from tensorflow.python.saved_model.utils_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.utils.build_tensor_info or tf.compat.v1.saved_model.build_tensor_info.
+INFO:tensorflow:Signatures INCLUDED in export for Classify: None
+I0502 13:18:31.476562 140297376626560 export_utils.py:170] Signatures INCLUDED in export for Classify: None
+INFO:tensorflow:Signatures INCLUDED in export for Regress: None
+I0502 13:18:31.476678 140297376626560 export_utils.py:170] Signatures INCLUDED in export for Regress: None
+INFO:tensorflow:Signatures INCLUDED in export for Predict: ['tensorflow/serving/predict', 'serving_default']
+I0502 13:18:31.476755 140297376626560 export_utils.py:170] Signatures INCLUDED in export for Predict: ['tensorflow/serving/predict', 'serving_default']
+INFO:tensorflow:Signatures INCLUDED in export for Train: None
+I0502 13:18:31.476821 140297376626560 export_utils.py:170] Signatures INCLUDED in export for Train: None
+INFO:tensorflow:Signatures INCLUDED in export for Eval: None
+I0502 13:18:31.476883 140297376626560 export_utils.py:170] Signatures INCLUDED in export for Eval: None
+2020-05-02 13:18:31.477377: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-02 13:18:31.477838: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:00:04.0
+2020-05-02 13:18:31.477922: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-05-02 13:18:31.477947: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-02 13:18:31.477976: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-02 13:18:31.477996: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-02 13:18:31.478017: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-02 13:18:31.478037: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-02 13:18:31.478057: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-02 13:18:31.478144: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-02 13:18:31.478554: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-02 13:18:31.478889: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2020-05-02 13:18:31.478931: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1180] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-02 13:18:31.478945: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1186]      0 
+2020-05-02 13:18:31.478954: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 0:   N 
+2020-05-02 13:18:31.479048: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-02 13:18:31.479482: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-02 13:18:31.479828: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15216 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:00:04.0, compute capability: 6.0)
+INFO:tensorflow:Restoring parameters from training/model.ckpt-50000
+I0502 13:18:31.482803 140297376626560 saver.py:1284] Restoring parameters from training/model.ckpt-50000
+INFO:tensorflow:Assets added to graph.
+I0502 13:18:32.071269 140297376626560 builder_impl.py:665] Assets added to graph.
+INFO:tensorflow:No assets to write.
+I0502 13:18:32.071460 140297376626560 builder_impl.py:460] No assets to write.
+INFO:tensorflow:SavedModel written to: training/export/Servo/temp-b'1588425508'/saved_model.pb
+I0502 13:18:32.969810 140297376626560 builder_impl.py:425] SavedModel written to: training/export/Servo/temp-b'1588425508'/saved_model.pb
+INFO:tensorflow:Loss for final step: 3.2481596.
+I0502 13:18:33.447304 140297376626560 estimator.py:371] Loss for final step: 3.2481596.
