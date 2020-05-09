@@ -12,147 +12,99 @@
 	</size>
 	<segmented>0</segmented>
 	<object>
-		<name>bee</name>
+		<name>hornet</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>818</xmin>
-			<ymin>414</ymin>
-			<xmax>876</xmax>
-			<ymax>459</ymax>
+			<xmin>811</xmin>
+			<ymin>141</ymin>
+			<xmax>868</xmax>
+			<ymax>186</ymax>
 		</bndbox>
-	</object>	<object>
+	</object>
+	<object>
 		<name>bee</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>491</xmin>
+			<xmin>485</xmin>
+			<ymin>740</ymin>
+			<xmax>873</xmax>
+			<ymax>898</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>882</xmin>
 			<ymin>738</ymin>
-			<xmax>576</xmax>
-			<ymax>785</ymax>
+			<xmax>961</xmax>
+			<ymax>819</ymax>
 		</bndbox>
-	</object>	<object>
+	</object>
+	<object>
 		<name>bee</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>942</xmin>
-			<ymin>450</ymin>
-			<xmax>1003</xmax>
-			<ymax>505</ymax>
+			<xmin>1014</xmin>
+			<ymin>738</ymin>
+			<xmax>1128</xmax>
+			<ymax>774</ymax>
 		</bndbox>
-	</object>	<object>
+	</object>
+	<object>
 		<name>bee</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>728</xmin>
-			<ymin>455</ymin>
-			<xmax>794</xmax>
-			<ymax>505</ymax>
+			<xmin>593</xmin>
+			<ymin>432</ymin>
+			<xmax>1099</xmax>
+			<ymax>564</ymax>
 		</bndbox>
-	</object>	<object>
+	</object>
+	<object>
 		<name>bee</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>632</xmin>
-			<ymin>732</ymin>
-			<xmax>722</xmax>
-			<ymax>776</ymax>
+			<xmin>1101</xmin>
+			<ymin>513</ymin>
+			<xmax>1138</xmax>
+			<ymax>541</ymax>
 		</bndbox>
-	</object>	<object>
+	</object>
+	<object>
 		<name>bee</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>596</xmin>
-			<ymin>505</ymin>
-			<xmax>667</xmax>
-			<ymax>552</ymax>
+			<xmin>805</xmin>
+			<ymin>388</ymin>
+			<xmax>856</xmax>
+			<ymax>432</ymax>
 		</bndbox>
-	</object>	<object>
+	</object>
+	<object>
 		<name>bee</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>829</xmin>
-			<ymin>494</ymin>
-			<xmax>929</xmax>
-			<ymax>549</ymax>
-		</bndbox>
-	</object>	<object>
-		<name>bee</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>644</xmin>
-			<ymin>463</ymin>
-			<xmax>707</xmax>
-			<ymax>508</ymax>
-		</bndbox>
-	</object>	<object>
-		<name>bee</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>517</xmin>
-			<ymin>803</ymin>
-			<xmax>584</xmax>
-			<ymax>868</ymax>
-		</bndbox>
-	</object>	<object>
-		<name>bee</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>710</xmin>
-			<ymin>728</ymin>
-			<xmax>804</xmax>
-			<ymax>787</ymax>
-		</bndbox>
-	</object>	<object>
-		<name>bee</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>843</xmin>
-			<ymin>468</ymin>
-			<xmax>905</xmax>
-			<ymax>525</ymax>
-		</bndbox>
-	</object>	<object>
-		<name>bee</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>1043</xmin>
-			<ymin>493</ymin>
-			<xmax>1112</xmax>
-			<ymax>540</ymax>
-		</bndbox>
-	</object>	<object>
-		<name>bee</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>645</xmin>
-			<ymin>826</ymin>
-			<xmax>725</xmax>
-			<ymax>896</ymax>
+			<xmin>893</xmin>
+			<ymin>403</ymin>
+			<xmax>923</xmax>
+			<ymax>443</ymax>
 		</bndbox>
 	</object>
 </annotation>
