@@ -1,0 +1,26 @@
+<annotation>
+	<folder>yt</folder>
+	<filename>Ataques_avespa_asiatica_as_colmeas-vespa_velutina_nigrithorax_1080p_720.jpeg</filename>
+	<path>/home/jeremy/Documents/HornetKiller/hornet-detector-trainer/images/yt/Ataques_avespa_asiatica_as_colmeas-vespa_velutina_nigrithorax_1080p_720.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1920</width>
+		<height>1080</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>229</xmin>
+			<ymin>666</ymin>
+			<xmax>436</xmax>
+			<ymax>971</ymax>
+		</bndbox>
+	</object>
+</annotation>
