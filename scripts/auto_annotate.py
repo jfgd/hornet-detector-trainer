@@ -55,11 +55,19 @@ with detection_graph.as_default():
     num_detections = detection_graph.get_tensor_by_name('num_detections:0')
     for image_path in TEST_IMAGE_PATHS:
       print("Auto Annotating ", image_path)
-      image = Image.open(image_path)
+      try:
+        image = Image.open(image_path)
+      except:
+        print("Image is broken, ignoring ...")
+        continue
       image_width, image_height = image.size
       # the array based representation of the image will be used later in order to prepare the
       # result image with boxes and labels on it.
-      image_np = load_image_into_numpy_array(image)
+      try:
+        image_np = load_image_into_numpy_array(image)
+      except:
+        print("Image is broken, ignoring ...")
+        continue
       # Expand dimensions since the model expects images to have shape: [1, None, None, 3]
       image_np_expanded = np.expand_dims(image_np, axis=0)
       # Actual detection.
