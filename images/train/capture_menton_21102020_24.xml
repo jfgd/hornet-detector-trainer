@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tosort</folder>
+	<filename>capture_menton_21102020_24.jpg</filename>
+	<path>/home/jfanguede/Documents/HK/hornet-detector-trainer/images/tosort/capture_menton_21102020_24.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>41</xmin>
+			<ymin>328</ymin>
+			<xmax>133</xmax>
+			<ymax>392</ymax>
+		</bndbox>
+	</object>
+</annotation>
