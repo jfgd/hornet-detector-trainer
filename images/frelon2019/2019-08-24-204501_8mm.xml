@@ -1,0 +1,48 @@
+<annotation>
+	<folder>frelon_2019_bis</folder>
+	<filename>2019-08-24-204501_8mm.jpg</filename>
+	<path>/home/jody/hornet-detector-trainer/images/frelon_2019_bis/2019-08-24-204501_8mm.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>956</xmin>
+			<ymin>144</ymin>
+			<xmax>1031</xmax>
+			<ymax>209</ymax>
+		</bndbox>
+	</object>	<object>
+		<name>bee</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1073</xmin>
+			<ymin>429</ymin>
+			<xmax>1132</xmax>
+			<ymax>497</ymax>
+		</bndbox>
+	</object>	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>813</xmin>
+			<ymin>376</ymin>
+			<xmax>925</xmax>
+			<ymax>444</ymax>
+		</bndbox>
+	</object>
+</annotation>

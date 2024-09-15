@@ -1,0 +1,26 @@
+<annotation>
+	<folder>lastimages</folder>
+	<filename>2019-10-03-180701_Right.jpg</filename>
+	<path>/home/jody/hornet-detector-trainer/lastimages/2019-10-03-180701_Right.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hornet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>383</xmin>
+			<ymin>478</ymin>
+			<xmax>449</xmax>
+			<ymax>555</ymax>
+		</bndbox>
+	</object>
+</annotation>
